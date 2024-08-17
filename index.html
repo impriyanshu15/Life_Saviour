@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Life Saviour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMediaQuerry.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- =================== TOP BANNER ===================== -->
+    <!-- <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text  banner-text">Verse</div>
+        </div>
+    </div> -->
+
+    <!-- =================== NAV BAR ===================== -->
+    <nav>
+        <div class="container main-nav flex">
+            <a class="logo" href="#">
+                <h3>Life Saviour</h3>
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-link">Home</a></li>
+                    <li><a href="#" class="hover-link">Products</a></li>
+                    <!-- <li><a href="#" class="hover-link">Highlighted News</a></li>
+                    <li><a href="#" class="hover-link">Recent News</a></li> -->
+                    <li><a href="#" class="hover-link">About Us</a></li>
+                    <li><a href="#" class="hover-link">Contact Us</a></li>
+                </ul>
+                    </li>
+            </div>
+            
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+        </div>
+    </header>
+     
+    <section class="landing-page float">
+        <div class="container flex main-content">
+                <p id="greeting">CALL PEOPLE FOR HELP</p>
+                <button class="geoBtn" onclick="sendMessageToPeople()">
+                    <span class="material-symbols-outlined">call</span>
+                </button>
+
+                <p class="showDetails">Your location</p>
+                <script>
+
+                    const showDetails = document.querySelector(".showDetails");
+
+                    document.querySelector('.geoBtn').addEventListener('click', () => {
+                        if(navigator.geolocation){
+                            navigator.geolocation.getCurrentPosition(
+                                (position) => {
+                                    // console.log(position.coords.latitude);
+                                    const {latitude, longitude} = position.coords;
+                                    showDetails.textContent = `the latitude ${latitude} & longitude ${longitude} `;
+                            }, 
+                            (error) => {
+                                showDetails.textContent =error.message;
+                                console.log(error.message);
+
+                            }
+                         );
+                        }
+                    });
+                </script>
+
+        </div>  
+    </section>
+    <section>
+
+                <div class="contact-container container flex">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left flex">
+                        <div class="contact-left-title">
+                            <h2>Become a Saviour</h2><hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="0c4ad54d-5444-45dc-9397-ed97dad5b11e">
+
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit <span class="material-symbols-outlined">
+                            arrow_forward
+                            </span></button>
+
+                    </form>
+                </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+    <script>
+                    function sendMessageToPeople(){
+                        document.getElementById("greeting").innerHTML = "People is coming";
+                    }
+                </script>
+</body>
+</html>
