@@ -17,8 +17,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    color: var(--primary-text-color);
-    background-image: url(https://cdn.pixabay.com/photo/2018/02/14/11/55/smoke-3152789_1280.jpg);
+    color: #fff;
+    background-image: url(web\ bg.mp4);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,8 +38,8 @@ h3{
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem;
-    color: var(--secondary-text-color);
+    font-size: 2rem;
+    color:#fff;
     line-height: 1.8rem;
 }
 
@@ -51,6 +51,14 @@ a{
 ul{
     list-style: none;
 }
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
 
 /* ============ UTILITY CLASSES ================== */
 
@@ -95,7 +103,7 @@ nav{
     top: 0;
     left: 0;
     color: beige;
-    background-color: rgba(255, 255, 255, 0.071);
+    background-color: rgba(0, 0, 0, 0.54);
     padding: 10px 0; 
 }
 .logo{
@@ -136,7 +144,7 @@ nav{
     width: 400px;
     background: red;
     border-radius: 50%;
-    box-shadow:inset 0 0 5px 15px #ca0e0e, 0 0 10px 5px #ea1111;
+    box-shadow:inset 0 0 1px 15px #ca0e0e, 0 0 3px 5px #ea1111;
     border: 0px;
     margin-bottom: 20px;
 }
@@ -158,17 +166,18 @@ nav{
 
 }
 .main-content{
-    padding-top: 200px;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 #greeting{
-    color: aliceblue;
+    color: #fff;
     font-size: 3em;
     margin-bottom: 70px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 .contact-container {
     justify-content: space-evenly;
@@ -180,8 +189,8 @@ nav{
 }
 
 .contact-left-title h2{
-    font-weight: 600;
-    color: #a363aa;
+    font-weight: 700;
+    color: #ff0077;
     font-size: 80px;
     margin-bottom: 5px;
 }
@@ -242,23 +251,38 @@ nav{
     font-weight: 700;
     padding-left: 10px;
 }
+/* ================= 'HOW IT WORKS' SECTION ================= */
+#HowItWorks{
+    background-color: #15ccc696;
+    text-align: justify;
+    padding: 150px 0;
+}
+.ques {
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.ans{
+    padding-left: 10px 0;
+}
 
 /* =================CONTACT SECTION ================= */
 
 #contacts{
     padding: 100px 10%;
     margin-top: 5px;
-    background-color: #0b3b3b58;
+    background-color: #10131369;
 }
 #contacts h2{
     text-align: center;
-    color: #f6f2e6;
+    color: #15ccc6;
     margin-bottom: 20px;
-    font-size: 4em;
+    font-size: 5em;
+    font-family: 'Poppins';
 }
 .contact-info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -266,7 +290,7 @@ nav{
     display: flex;
     text-decoration: none;
     color: #ededed;
-    font-size: 38px;
+    font-size: 5em;
     margin: 40px 35px;
     justify-content: center;
     align-items: center;
@@ -277,5 +301,19 @@ nav{
 }
 .contact-info a i{
     margin-right: 10px;
-    font-size: 50px;
+    font-size: 1.2em;
 }       
+.contact-info hr{
+    border: none;
+    width: 100%;
+    height: 5px;
+    background-color: #15ccc6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+footer{
+    color: #fff;
+    background-color: #15ccc696;
+    padding: 30px 0;
+}
