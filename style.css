@@ -18,12 +18,12 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
-    background-color: #00acf01b;
+    background-color: #2c2727;
     background-image: url(https://cdn.pixabay.com/photo/2023/03/16/09/20/hexagon-7856263_1280.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+    background-blend-mode: darken;
 }
 
 h1 {
