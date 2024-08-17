@@ -19,7 +19,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
-    background-color: #342e2e;
+    background-color: #00acf01b;
     background-image: url(https://cdn.pixabay.com/photo/2023/03/16/09/20/hexagon-7856263_1280.png);
     background-position: center;
     background-size: cover;
@@ -103,6 +103,9 @@ nav{
 }
 .logo{
     color: beige;
+    min-width: 200px;
+    font-size: 15em;
+    padding: 20px 0;
 }
 .main-nav {
     justify-content: space-between;
@@ -120,23 +123,32 @@ nav{
 .nav-links ul li a{
     color: var(--primary-text-color);
     color: beige;
+    font-size: 1.2em;
 
 
 }
 /* ============ HEADER ================== */
 
 .geoBtn{
-        height: 100px;
-    width: 100px;
+    height: 400px;
+    width: 400px;
     background: red;
     border-radius: 50%;
-    box-shadow: 0 0 2px 5px #ca0e0e, 0 0 10px 5px #ea1111;
+    box-shadow:inset 0 0 5px 15px #ca0e0e, 0 0 10px 5px #ea1111;
     border: 0px;
+    margin-bottom: 20px;
 }
 .geoBtn:hover{
     background: rgb(44, 255, 44);
-    box-shadow: 0 0 10px 2px #36c805fe, 0 0 10px 2px #80f15afe;
+    box-shadow: 0 0 10px 15px #36c805fe, 0 0 10px 12px #80f15afe;
 
+}
+.geoBtn span{
+    font-size: 15em;
+}
+.MessageAfterCall{
+    text-align: center;
+    font-size: larger;
 }
 .material-symbols-outlined {
     color: #fff;
@@ -152,22 +164,23 @@ nav{
 }
 #greeting{
     color: aliceblue;
+    font-size: 3em;
+    margin-bottom: 70px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .contact-container {
     justify-content: space-evenly;
-    margin-top: 10vh;
     height: 100vh;
 }
 .contact-left{
     flex-direction: column;
     align-items: start;
-    gap: 20px;
 }
 
 .contact-left-title h2{
     font-weight: 600;
     color: #a363aa;
-    font-size: 40px;
+    font-size: 80px;
     margin-bottom: 5px;
 }
 
@@ -181,15 +194,17 @@ nav{
 
 }
 .contact-inputs{
-    width: 400px;
-    height: 50px;
+    flex-direction: column;
+    width: 700px;
+    height: 100px;
     border: none;
     outline: none;
     padding-left: 25px;
     font-weight: 500;
     color: #666;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #fff7d8;
+    margin-bottom: 20px;
 }
 
 .contact-left textarea{
@@ -202,16 +217,68 @@ nav{
 }
 .contact-inputs::placeholder{
     color: #a9a9a9;
+    font-size: 2em;
 }
 .contact-left button{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 15px 30px;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 56px;
     color: #fff;
-    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    background: linear-gradient(270deg, #ff844f, #fa6d86);
     cursor: pointer;
+}
+.contact-left button span{
+    font-size: 56px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+/* =================CONTACT SECTION ================= */
+
+#contacts{
+    padding: 100px 10%;
+    margin-top: 5px;
+    background-color: #0b3b3b;
+    background-image: url(https://cdn.pixabay.com/photo/2023/03/16/09/20/hexagon-7856263_1280.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+
+}
+#contacts h2{
+    text-align: center;
+    color: #fff7d8;
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info a{
+    display: flex;
+    text-decoration: none;
+    color: #ededed;
+    font-size: 38px;
+    margin: 40px 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-info a:hover{
+    color: #00abf0;
+}
+.contact-info a i{
+    margin-right: 10px;
+    font-size: 50px;
 }
