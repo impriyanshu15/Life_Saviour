@@ -253,17 +253,15 @@ nav{
 }
 /* ================= 'HOW IT WORKS' SECTION ================= */
 #HowItWorks{
-    background-color: #15ccc696;
+    background-color: #08595677;
     text-align: justify;
     padding: 150px 0;
+    margin-bottom: -5px;
 }
 .ques {
-    color: #222;
+    color: #f99d00;
     font-weight: 700;
     margin-bottom: 15px;
-}
-.ans{
-    padding-left: 10px 0;
 }
 
 /* =================CONTACT SECTION ================= */
