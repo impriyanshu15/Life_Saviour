@@ -171,12 +171,13 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #10131369;
 }
 #greeting{
     color: #fff;
     font-size: 3em;
     margin-bottom: 70px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     font-weight: 600;
 }
 .contact-container {
@@ -253,10 +254,9 @@ nav{
 }
 /* ================= 'HOW IT WORKS' SECTION ================= */
 #HowItWorks{
-    background-color: #08595677;
+    background-color: #10131369;
     text-align: justify;
     padding: 150px 0;
-    margin-bottom: -5px;
 }
 .ques {
     color: #f99d00;
@@ -269,7 +269,6 @@ nav{
 #contacts{
     padding: 100px 10%;
     margin-top: 5px;
-    background-color: #10131369;
 }
 #contacts h2{
     text-align: center;
