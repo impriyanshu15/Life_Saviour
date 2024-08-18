@@ -18,10 +18,10 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-image: url(web\ bg.mp4);
+    /* background-image: url(web\ bg.mp4);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 h1 {
@@ -53,8 +53,8 @@ ul{
 }
 video {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -2;
