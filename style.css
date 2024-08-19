@@ -101,7 +101,29 @@ nav, header, section, footer {
     padding: 15px 30px;
     text-align: center;
 } */
+/* ============ HEADER ================== */
 
+.logo{
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 80px;
+}
+.logo h3{
+    color: beige;
+    font-size: 3em;
+}
+.menuBtn{
+    position: fixed;
+    top: 30px;
+    right: 80px;
+    background: transparent;
+    border: 0px;
+}
+.menuBtn span{
+    font-size: 8em;
+    width: 100%;
+}
 /* ============ NAV BAR ================== */
 nav{
     position: sticky;
@@ -111,36 +133,35 @@ nav{
     background-color: rgba(0, 0, 0, 0.54);
     padding: 10px 0; 
 }
-.logo{
-    width: 250px;
-    float: left;
-    clear: both;
-
-}
-.logo h3{
-    color: beige;
-    font-size: 2em;
-    padding: 20px 0;
-}
-.main-nav {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .nav-links{
-    flex-basis: 730px;
+    position: absolute;
+    top: 150px;
+    left: -100%;
+    padding: 100px ;
+    justify-content: center;
+    background-color: #f6f5ee;
+    width: 100%;
+    height: 100vh;
+    transition: .2s ease-in-out;
 }
-
+.nav-links.active{
+    left: 0;
+}
 .nav-links ul{
-    justify-content: end;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.nav-links ul li{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-right: 90px;
 }
 .nav-links ul li a{
-    color: var(--primary-text-color);
-    color: beige;
-    font-size: 1.3em;
-
-
+    color: #222;
+    font-size: 4em;
+    font-weight: 700;
 }
 /* ============ HEADER ================== */
 

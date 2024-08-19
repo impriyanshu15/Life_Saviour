@@ -19,32 +19,38 @@
             <div class="small-bold-text  banner-text">Verse</div>
         </div>
     </div> -->
+    <!-- =================== HEADER ===================== -->
+
 
     <!-- =================== NAV BAR ===================== -->
-    <nav>
-        <div class="container main-nav flex">
-    <a class="logo" href="#">
-                <h3>Life Saviour</h3>
+ <nav>
+    <header>
+        <div class="flex" >
+        <a class="logo" href="#">
+            <!-- <img src="image/Logo transparent white font bg.png" alt="Life Saviour"> -->
+                <h3>The Saviour.</h3>
             </a>
-            <div class="nav-links">
-                <ul class="flex">
-                    <li><a href="#" class="hover-link">Home</a></li>
-                    <!-- <li><a href="#" class="hover-link">Highlighted News</a></li>
-                    <li><a href="#" class="hover-link">Recent News</a></li> -->
-                    <li><a href="#BeASaviour" class="hover-link">Be a Saviour</a></li>
-                    <li><a href="#HowItWorks" class="hover-link">How it works</a></li>
+        </div>
+    </header>
+        <div class="container main-nav">
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#" class="hover-link">Home</a></li><hr>
+                    <li><a href="#BeASaviour" class="hover-link">Be a Saviour</a></li><hr>
+                    <li><a href="#HowItWorks" class="hover-link">How it works</a></li><hr>
+                    <li><a href="#" class="hover-link">Products</a></li><hr>
+                    <li><a href="#" class="hover-link">Highlighted News</a></li><hr>
+                    <li><a href="#" class="hover-link">Recent News</a></li><hr>
                     <li><a href="#contacts" class="hover-link">Contact Us</a></li>
                 </ul>
                     </li>
             </div>
+            <div>
+                <button class="menuBtn" id="menuToggle"><span class="material-symbols-outlined ">menu</span></button>
+            </div>
             
         </div>
     </nav>
-
-    <header>
-        <div class="container">
-        </div>
-    </header>
      
     <section class="landing-page float">
         <div class="container flex main-content">
@@ -133,5 +139,13 @@
         </div>
     </footer>
 
+    <script>
+        const toggleButton = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
