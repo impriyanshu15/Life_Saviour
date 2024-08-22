@@ -14,7 +14,7 @@
         const delay = 15000;
 
     setTimeout(function() {
-        alert ('TRIAL PERIOD \n\nCurrently calling Button (red in color) is not active, it will show your location only to you, we will not get your location. So, Feel free to click on it and check your latitude & longitude on "latlong.net" and please inform us through "Be a Saviour" form, whether it is showing correct location or not. \n\nOnly "Be A Saviour" form is active because we will be unable to help if there is no any saviour. ');
+        alert ('This website is on TRIAL PERIOD \n\nCurrently, calling Button (red in color) is not active, it will show your location only to you, we will not get your location. So, Feel free to click on it and check your latitude & longitude on "latlong.net or on google map" and please inform us through "Feedback form", whether it is showing correct location or not. \n\nOnly "Be A Saviour" & "Feedback" forms are active at this time because we will have to first reach out every citizen so that they became a saviour. Because without them we will unable to help, if there is no any saviour.');
     }, delay);
 
     </script>
@@ -79,7 +79,7 @@
                                 (position) => {
                                     // console.log(position.coords.latitude);
                                     const {latitude, longitude} = position.coords;
-                                    showDetails.textContent = `the latitude ${latitude} & longitude ${longitude} `;
+                                    showDetails.textContent = `Latitude ${latitude}   Longitude: ${longitude} `;
                             }, 
                             (error) => {
                                 showDetails.textContent =error.message;
@@ -104,7 +104,8 @@
 
                         <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                         <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <input type="number" name="number" placeholder="your age" class="contact-inputs" required>
+                        <input type="address" name="address" placeholder="Address (where you live most of the time)" class="contact-inputs" required>
                         <button type="submit">Submit <span class="material-symbols-outlined">
                             arrow_forward
                             </span></button>
@@ -124,7 +125,7 @@
     <section id="HowItWorks">
         <div class="container">
         <p class="ques">Q. How it works:</p>
-        <p class="ans"><b>STEP 1:</b> On filling the "Be a Saviour" form you will be registered in this communtiy. And when a person who will we in trouble (mainly in r@pe cases) in your local area, you will be notified by us to help her/him. And In the same way when you would we in their place then you will be rescued by your 'on spot crime locals', If he or she is the member of this community. So, help us to reach out every people by sharing this website, so that we can make our country free of these rascles who doesn't even fear for a moment during doing this heinous crime. <br><br>
+        <p class="ans"><b>STEP 1:</b> On filling the "Be a Saviour" form you will be registered to this community. And when a person who will we in trouble (mainly in r@pe cases) in your local area, you will be notified by us to help her/him. And In the same way when you would we in their place then you will be rescued by your 'on spot locals', If they are the member of this community. So, help us to reach out every people by sharing this website, so that we can make our country free of these rascals who didn't even fear for a moment while doing this heinous crime. <br><br>
         <b>STEP 2:</b> When you wll be in problem you have to just click the " <span style="color: red; font-weight: 600;">RED BUTTON</span> " which is at the Home page. It will send your location to our server. And then we will send the Saviours to rescue you. Those saviour will be locals of the crime spot, so that they can rescue you within few minutes.</p><br>
 
         <p class="ques">Q. Will Your privacy (location) be shared by third party companies?</p>
@@ -133,6 +134,24 @@
     </section>    
     <!-- ====================================== CONTACT US SECTION ========================== -->
 <section id="contacts">
+    
+
+    <div class="contact-container container flex">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left flex">
+            <div class="contact-left-title">
+                <h2>Feedback Form</h2><hr>
+            </div>
+            <input type="hidden" name="access_key" value="0c4ad54d-5444-45dc-9397-ed97dad5b11e">
+
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <span class="material-symbols-outlined">
+                arrow_forward
+                </span></button>
+
+        </form>
+    </div>
     <h2>Contacts Us</h2>
     <div class="contact-info">
         <a href="https://www.instagram.com/impriyanshu_15/"><i class='bx bxl-instagram'></i>Instagram</a><hr>
