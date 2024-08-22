@@ -79,7 +79,7 @@
                                 (position) => {
                                     // console.log(position.coords.latitude);
                                     const {latitude, longitude} = position.coords;
-                                    showDetails.textContent = `Latitude ${latitude}   Longitude: ${longitude} `;
+                                    showDetails.textContent = `Latitude: ${latitude}        Longitude: ${longitude} `;
                             }, 
                             (error) => {
                                 showDetails.textContent =error.message;
